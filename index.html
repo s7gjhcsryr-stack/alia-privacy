@@ -17,9 +17,6 @@
             color: #333;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             min-height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
             padding: 20px;
         }
         
@@ -29,19 +26,32 @@
             border-radius: 10px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
             padding: 60px 40px;
-            text-align: center;
+            margin: 20px auto;
         }
         
         h1 {
             color: #667eea;
             margin-bottom: 20px;
             font-size: 2.5em;
+            text-align: center;
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            font-size: 1.8em;
         }
         
         p {
             font-size: 1.1em;
             color: #666;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        
+        .intro {
+            text-align: center;
         }
         
         .features {
@@ -64,6 +74,12 @@
             margin-bottom: 10px;
         }
         
+        .feature p {
+            font-size: 1em;
+            text-align: left;
+            margin-bottom: 0;
+        }
+        
         .cta-button {
             display: inline-block;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -81,19 +97,61 @@
             box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
         }
         
+        .privacy-policy {
+            text-align: left;
+            margin-top: 40px;
+            padding-top: 40px;
+            border-top: 2px solid #eee;
+        }
+        
+        .privacy-policy h2 {
+            text-align: left;
+            margin-top: 0;
+        }
+        
+        .privacy-policy ol {
+            padding-left: 20px;
+        }
+        
+        .privacy-policy li {
+            margin-bottom: 25px;
+            color: #555;
+        }
+        
+        .privacy-policy strong {
+            color: #333;
+        }
+        
+        .privacy-policy ul {
+            margin: 15px 0 15px 30px;
+            color: #666;
+        }
+        
+        .privacy-policy ul li {
+            margin-bottom: 10px;
+        }
+        
+        .effective-date {
+            text-align: left;
+            color: #999;
+            font-size: 0.95em;
+            margin: 20px 0;
+        }
+        
         footer {
             margin-top: 50px;
             padding-top: 30px;
             border-top: 1px solid #eee;
             color: #999;
             font-size: 0.9em;
+            text-align: center;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>🔒 Alia Privacy</h1>
-        <p>Protecting Your Privacy, Empowering Your Data</p>
+        <p class="intro">Protecting Your Privacy, Empowering Your Data</p>
         
         <div class="features">
             <div class="feature">
@@ -114,7 +172,82 @@
             </div>
         </div>
         
-        <a href="https://github.com/s7gjhcsryr-stack/alia-privacy" class="cta-button">View on GitHub</a>
+        <div style="text-align: center;">
+            <a href="https://github.com/s7gjhcsryr-stack/alia-privacy" class="cta-button">View on GitHub</a>
+        </div>
+        
+        <div class="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p class="effective-date"><strong>Effective date: April 28, 2026</strong></p>
+            
+            <p><strong>Alia Anime AI</strong> is designed as a private, on-device AI companion. This Privacy Policy explains how the app handles information.</p>
+            
+            <ol>
+                <li>
+                    <strong>On-device AI processing</strong>
+                    <p>Alia Anime AI runs a local language model on your device. The model is downloaded on first startup and requires approximately 2.4 GB of storage.</p>
+                    <p>Your conversations are processed locally on your phone and are not sent to our servers for AI processing.</p>
+                </li>
+                
+                <li>
+                    <strong>Information we collect</strong>
+                    <p>Alia Anime AI does not require you to create an account.</p>
+                    <p>The app may store the following information locally on your device:</p>
+                    <ul>
+                        <li>Conversation history</li>
+                        <li>Companion memory and preferences</li>
+                        <li>App settings</li>
+                        <li>Downloaded AI model files</li>
+                    </ul>
+                    <p>This information is stored on your device to improve your experience and allow Alia to remember useful context.</p>
+                </li>
+                
+                <li>
+                    <strong>Voice input</strong>
+                    <p>If voice features are enabled, the app may request microphone access.</p>
+                    <p>Microphone access is used only to capture your voice input for interaction with the app. Voice input is processed for the purpose of generating a response from Alia.</p>
+                </li>
+                
+                <li>
+                    <strong>Data sharing</strong>
+                    <p>We do not sell your personal data.</p>
+                    <p>We do not share your conversations with advertisers or third parties.</p>
+                </li>
+                
+                <li>
+                    <strong>Internet access</strong>
+                    <p>Internet access may be used to download the AI model during first startup or when updating the model.</p>
+                    <p>After the model is downloaded, core AI interaction is designed to run locally on your device.</p>
+                </li>
+                
+                <li>
+                    <strong>Data storage and deletion</strong>
+                    <p>Conversation history, memory, preferences, and model files may be stored locally on your device.</p>
+                    <p>You can delete app data by removing the app from your device. Future versions may include in-app controls to clear memory and conversation history.</p>
+                </li>
+                
+                <li>
+                    <strong>Children's privacy</strong>
+                    <p>Alia Anime AI is not intended for children under 13. We do not knowingly collect personal information from children.</p>
+                </li>
+                
+                <li>
+                    <strong>Security</strong>
+                    <p>Because the app is designed to process conversations locally, your data stays on your device unless you choose to share it outside the app.</p>
+                    <p>However, no method of storage or transmission is completely secure. Please avoid entering highly sensitive personal, financial, medical, or legal information.</p>
+                </li>
+                
+                <li>
+                    <strong>Changes to this policy</strong>
+                    <p>We may update this Privacy Policy from time to time. Any changes will be posted at this URL with an updated effective date.</p>
+                </li>
+                
+                <li>
+                    <strong>Contact</strong>
+                    <p>For privacy questions, please contact us through our GitHub repository.</p>
+                </li>
+            </ol>
+        </div>
         
         <footer>
             <p>&copy; 2026 Alia Privacy. All rights reserved.</p>
